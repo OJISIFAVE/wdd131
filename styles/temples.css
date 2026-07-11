@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: purple;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: black;
+}
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* GRID (FIXED TO MATCH EXAMPLE) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* IMAGE STYLE */
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CARD */
+figure {
+    margin: 0;
+}
+
+/* CAPTION */
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: purple;
+}
+
+/* FOOTER (THIS WAS MISSING) */
+footer {
+    background: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
