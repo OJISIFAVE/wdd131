@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Place</title>
+
+    <meta name="description" content="A webpage about my favorite place">
+    <meta name="author" content="OJISI GOD'SFAVOUR">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Abuja, Nigeria</h1>
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <picture>
+    <source srcset="images/abuja-small.webp" media="(max-width: 600px)">
+    <source srcset="images/abuja-large.webp" media="(min-width: 601px)">
+    <img src="images/abuja-large.webp" alt="Beautiful view of Abuja Nigeria" width="1200" height="600">
+  </picture>
+
+  <section class="data">
+    <h2>Data</h2>
+    <p>Area: Federal Capital Territory</p>
+    <p>Population: Over 3 million</p>
+    <p>Country: Nigeria</p>
+    <p>Language: English</p>
+  </section>
+
+  <section class="weather">
+    <h2>Weather</h2>
+    <img src="images/weather.svg" alt="Weather icon">
+    <p>Temperature: <span id="temperature">25</span>°C</p>
+    <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+    <p>Wind Chill: <span id="windChill"></span></p>
+  </section>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+© <span id="currentyear"></span> OJISI GOD'SFAVOUR 
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+
+</body>
+</html>

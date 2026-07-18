@@ -1,0 +1,118 @@
+/* ===== ROOT VARIABLES ===== */
+::root {
+    --primary-color: #006b3f;   /* Nigeria green */
+    --secondary-color: #f5f5f5; /* light background */
+    --accent-color: #008753;   /* lighter green */
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+}
+
+/* HERO IMAGE */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== DATA BOX ===== */
+.data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--white);
+    padding: 1rem;
+    max-width: 250px;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.data h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== WEATHER BOX ===== */
+.weather {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--white);
+    padding: 1rem;
+    max-width: 220px;
+    text-align: center;
+    border-right: 5px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* WEATHER ICON (mobile svg) */
+.weather img {
+    width: 50px;
+    margin: 0.5rem 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+/* ===== LARGE SCREEN WEATHER ICON (pseudo-element) ===== */
+@media (min-width: 768px) {
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+
+    .data,
+    .weather {
+        position: static;
+        margin: 1rem;
+        max-width: 100%;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .weather {
+        text-align: left;
+    }
+}
