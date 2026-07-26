@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+
+    .gallery section {
+        padding: 20px;
+    }
+
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+}
