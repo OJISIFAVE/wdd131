@@ -77,7 +77,7 @@ const temples = [
         location: "Manila, Philippines",
         dedicated: "1984",
         area: 26000,
-        imageUrl: "images/Manila-Philippines-temple.jpg"
+        imageUrl: "images/Manila-Philippines.jpg"
     }
 ];
 
