@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #e8dff5;
+}
+
+header {
+    background-color: #5b2a86;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    max-width: 400px;
+    margin: auto;
+}
+
+form {
+    background-color: #b8e0d2;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+label,
+legend {
+    display: block;
+    font-weight: bold;
+    color: #3b1f5e;
+    margin-top: 15px;
+}
+
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eadcf8;
+    box-sizing: border-box;
+}
+
+
+#productName {
+    background-color: #eadcf8;
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+fieldset label {
+    margin: 12px 0;
+    font-weight: normal;
+}
+
+
+textarea {
+    height: 120px;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #5b2a86;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #3b1f5e;
+}
+
+
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 600px;
+    }
+}
