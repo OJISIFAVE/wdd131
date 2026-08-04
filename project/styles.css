@@ -1,0 +1,89 @@
+body {
+    background-color: #F4F4F4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+/* NAV BAR */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h1, h2 {
+    font-family: Georgia, serif;
+    color: #4CAF50;
+}
+
+/* WIREFRAMES */
+.wireframe {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.wireframe div {
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
