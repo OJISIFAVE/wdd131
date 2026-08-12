@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Available Pets | Pet Adoption & Animal Care Center</title>
+    <meta name="description" content="Browse dogs, cats, and rabbits available for adoption and learn more about each pet's personality and needs.">
+    <meta name="author" content="Godsfavour Ojisi">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html" aria-label="Pet Adoption and Animal Care Center home">
+                🐾
+            </a>
+
+            <div>
+                <h1>Pet Adoption & Animal Care Center</h1>
+                <p>Find a friend. Give love. Make a difference.</p>
+            </div>
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="pets.html">Available Pets</a></li>
+            <li><a href="care.html">Adoption & Care</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">Meet the animals</p>
+            <h2>Pets Available for Adoption</h2>
+            <p>
+                Every pet has a unique personality. Browse our animals and find
+                one that could become part of your family.
+            </p>
+        </section>
+
+        <section class="filter-section">
+            <label for="petFilter">Filter by animal type:</label>
+
+            <select id="petFilter">
+                <option value="all">All Pets</option>
+                <option value="dog">Dogs</option>
+                <option value="cat">Cats</option>
+                <option value="rabbit">Rabbits</option>
+            </select>
+
+            <button id="favoritesButton" class="secondary-button" type="button">
+                Show Favorites
+            </button>
+        </section>
+
+        <p id="petMessage" class="status-message" aria-live="polite"></p>
+
+        <section id="petGrid" class="pet-grid" aria-label="Available pets">
+        </section>
+
+        <section class="favorites-section">
+            <h2>Your Favorite Pets</h2>
+            <p id="favoritesMessage">
+                You have not saved any pets yet.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Pet Adoption & Animal Care Center</h2>
+                <p>Helping pets find loving homes.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="pets.html">Available Pets</a>
+                <a href="care.html">Adoption & Care</a>
+                <a href="references.html">References</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Pet Adoption & Animal Care Center | Godsfavour Ojisi
+        </p>
+    </footer>
+</body>
+</html>

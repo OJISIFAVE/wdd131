@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adoption & Pet Care | Pet Adoption & Animal Care Center</title>
+    <meta name="description" content="Learn about responsible pet ownership and complete our adoption interest form to begin welcoming a pet into your home.">
+    <meta name="author" content="Godsfavour Ojisi">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html" aria-label="Pet Adoption and Animal Care Center home">
+                🐾
+            </a>
+
+            <div>
+                <h1>Pet Adoption & Animal Care Center</h1>
+                <p>Find a friend. Give love. Make a difference.</p>
+            </div>
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a class="active" href="care.html">Adoption & Care</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">Responsible ownership</p>
+            <h2>Adoption & Pet Care</h2>
+            <p>
+                Bringing a pet home is a rewarding responsibility. Make sure
+                you are prepared to provide care throughout your pet's life.
+            </p>
+        </section>
+
+        <section class="care-grid">
+            <article class="care-card">
+                <span class="feature-icon">🍲</span>
+                <h2>Nutrition</h2>
+                <p>
+                    Provide appropriate food, clean drinking water, and a
+                    feeding routine suitable for your pet's age and needs.
+                </p>
+            </article>
+
+            <article class="care-card">
+                <span class="feature-icon">🏥</span>
+                <h2>Health</h2>
+                <p>
+                    Regular veterinary care, vaccinations, parasite prevention,
+                    and attention to changes in behavior help keep pets healthy.
+                </p>
+            </article>
+
+            <article class="care-card">
+                <span class="feature-icon">🎾</span>
+                <h2>Exercise</h2>
+                <p>
+                    Pets need appropriate physical activity and mental stimulation
+                    to stay active and happy.
+                </p>
+            </article>
+
+            <article class="care-card">
+                <span class="feature-icon">🤗</span>
+                <h2>Companionship</h2>
+                <p>
+                    Give your pet attention, affection, training, and a safe
+                    environment where it can feel comfortable.
+                </p>
+            </article>
+        </section>
+
+        <section class="adoption-process">
+            <div>
+                <p class="eyebrow">How it works</p>
+                <h2>The Adoption Process</h2>
+
+                <ol>
+                    <li>Browse the available pets.</li>
+                    <li>Choose an animal that fits your household.</li>
+                    <li>Complete the adoption interest form.</li>
+                    <li>Prepare your home for your new companion.</li>
+                    <li>Complete the adoption process with the center.</li>
+                </ol>
+
+                <img
+                    src="images/hero-pets.jpg"
+                    alt="Pets in need of loving homes"
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="form-container">
+                <h2>Adoption Interest Form</h2>
+
+                <form id="adoptionForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <fieldset>
+                        <legend>What type of pet are you interested in?</legend>
+
+                        <label>
+                            <input type="radio" name="petType" value="Dog" required>
+                            Dog
+                        </label>
+
+                        <label>
+                            <input type="radio" name="petType" value="Cat">
+                            Cat
+                        </label>
+
+                        <label>
+                            <input type="radio" name="petType" value="Rabbit">
+                            Rabbit
+                        </label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="experience">Pet ownership experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="" disabled selected>
+                                Select an option
+                            </option>
+                            <option value="none">No previous experience</option>
+                            <option value="some">Some experience</option>
+                            <option value="experienced">Very experienced</option>
+                        </select>
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        I understand that pet ownership is a long-term responsibility.
+                    </label>
+
+                    <button class="button" type="submit">
+                        Submit Interest
+                    </button>
+
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Pet Adoption & Animal Care Center</h2>
+                <p>Helping pets find loving homes.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="pets.html">Available Pets</a>
+                <a href="care.html">Adoption & Care</a>
+                <a href="references.html">References</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Pet Adoption & Animal Care Center | Godsfavour Ojisi
+        </p>
+    </footer>
+</body>
+</html>
